@@ -5,14 +5,16 @@ const Person = {
         console.log(`Hello, my name is ${this.name}!`);
     }
 }
-console.log(Person)
+// Destructuring
 
-const copiedPerson = { ...Person }
-console.log(copiedPerson)
+// console.log(Person)
 
-// Using rest operator
-const toArray = (...args) => {
-    return args
-}
+// const copiedPerson = { ...Person }
+// console.log(copiedPerson)
 
-console.log(toArray(1, 2, 3, 4))
+// // Using rest operator
+// const toArray = (...args) => {
+//     return args
+// }
+
+// console.log(toArray(1, 2, 3, 4))
