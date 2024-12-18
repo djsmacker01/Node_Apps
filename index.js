@@ -6,3 +6,6 @@ const Person = {
     }
 }
 console.log(Person)
+
+const copiedPerson = { ...Person }
+console.log(copiedPerson)
