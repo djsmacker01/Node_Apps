@@ -6,7 +6,11 @@ const Person = {
     }
 }
 // Destructuring
+const printName = (personData) => {
+    console.log(personData.name)
+}
 
+printName(Person)
 // console.log(Person)
 
 // const copiedPerson = { ...Person }
