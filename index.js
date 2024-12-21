@@ -6,8 +6,8 @@ const Person = {
     }
 }
 // Destructuring
-const printName = (personData) => {
-    console.log(personData.name)
+const printName = ({name,age}) => {
+    console.log(name,age)
 }
 
 printName(Person)
