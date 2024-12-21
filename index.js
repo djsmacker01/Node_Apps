@@ -14,6 +14,13 @@ const printName = ({name,age}) => {
 
 const { name, age } = Person
 console.log(name, age)
+
+// Asynchronous
+
+setTimeout(() => {
+    console.log('Async greeting')
+    Person.greet()
+},1000)
 // console.log(Person)
 
 // const copiedPerson = { ...Person }
