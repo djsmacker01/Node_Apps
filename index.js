@@ -7,7 +7,7 @@ const Person = {
 }
 // Destructuring
 const printName = ({name,age}) => {
-    console.log(name,age)
+    console.log(name,age,greet())
 }
 
 printName(Person)
