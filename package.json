@@ -17,5 +17,8 @@
     "Javascript"
   ],
   "author": "Nurudeen",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
