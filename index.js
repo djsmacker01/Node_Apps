@@ -1,26 +1,26 @@
-const Person = {
-    name: 'John Doe',
-    age: 30,
-    greet() {
-        console.log(`Hello, my name is ${this.name}!`);
-    }
-}
+// const Person = {
+//     name: 'John Doe',
+//     age: 30,
+//     greet() {
+//         console.log(`Hello, my name is ${this.name}!`);
+//     }
+// }
 // Destructuring
-const printName = ({name,age}) => {
-    console.log(name)
-}
+// const printName = ({name,age}) => {
+//     console.log(name)
+// }
 
 // printName(Person)
 
-const { name, age } = Person
-console.log(name, age)
+// const { name, age } = Person
+// console.log(name, age)
 
 // Asynchronous
 
-setTimeout(() => {
-    console.log('Async greeting')
-    Person.greet()
-},1000)
+// setTimeout(() => {
+//     console.log('Async greeting')
+//     Person.greet()
+// },1000)
 // console.log(Person)
 
 // const copiedPerson = { ...Person }
