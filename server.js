@@ -8,8 +8,9 @@ app.use((req,res, next) => {
     next()
 })
 
-app.use((req,res) => {
+app.use((req,res,next) => {
     console.log('Another the middleware')
+    res.send('<h1>Hello from express</h1>')
 })
 
 
