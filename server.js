@@ -13,7 +13,7 @@ app.use((req,res,next) => {
     res.send('<h1>Hello from express</h1>')
 })
 
-app.listen(port)
+app.listen(PORT)
 // server.listen(3000, () => {
 //     console.log('Server is running on port 3000')
 // })
