@@ -3,10 +3,10 @@ const express = require('express')
 
 const app = express(); 
 // const PORT = 3000
-// app.use((req,res, next) => {
-//     console.log('In the middleware')
-//     next()
-// })
+app.use('/',(req,res, next) => {
+    console.log('In the middleware')
+    next()
+})
 app.use('/add-product', (req, res, next) => {
     console.log('Add Product')
     // res.send('<h1> Add product page<h1/>')
@@ -16,7 +16,7 @@ app.use('/add-product', (req, res, next) => {
 
 app.use('/product',(req,res) => {
     console.log('Another the middleware')
-    res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit"><button/></form > ')
+    res.redirect('/')
 })
 
 
