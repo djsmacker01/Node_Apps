@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const app = express();
 
 // Middleware
-app.use(bodyParser.urlencoded())
+app.use(bodyParser.urlencoded({extended: true}))
 app.get('/',(req, res)=> {
     console.log('Hello from the root route');
     res.send('Hello from the root route');
