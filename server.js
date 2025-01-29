@@ -15,7 +15,7 @@ app.use(adminRoutes);
 app.use(shopRouter);
 
 app.use((req, res, next) => {
-    res.sendFile(path.join(__dirname,'../','views','404.html'))
+    res.sendFile(path.join(__dirname,'views','404.html'))
 })
 
 
