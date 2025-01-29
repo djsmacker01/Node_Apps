@@ -4,12 +4,14 @@ const shopRouter = require('./routes/shop');
 const bodyParser = require('body-parser');
 const app = express();
 
-app.use(adminRoutes);
-app.use(shopRouter);
+
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }))
 
+//routes with base path
+app.use(adminRoutes);
+app.use(shopRouter);
 
 
 app.listen(3000, ()=> {
