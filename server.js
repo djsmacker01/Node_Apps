@@ -5,7 +5,7 @@ const shopRouter = require('./routes/shop');
 const bodyParser = require('body-parser');
 const app = express();
 
-
+app.set
 
 // Middleware
 app.use(bodyParser.urlencoded({ extended: false }))
