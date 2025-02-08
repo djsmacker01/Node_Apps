@@ -9,7 +9,7 @@ const products = []
 router.get('/admin/add-product', (req, res, next) => {
     // const products = adminData.products
 
-    res.render('add-product',{prods:products, docTitle: 'add-product'})
+    res.render('add-product',{pageTitle: 'Add Product'})
 
     // res.sendFile(path.join(rootDir, 'views', 'add-product.html'))
 })
