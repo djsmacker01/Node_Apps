@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Shop
+        link(rel="stylesheet", href="/css/shop.css")
+        link(rel="stylesheet", href="/css/add-product.css")
+
+    body 
+        header.main-header
+            nav.main-header__nav
+                ul.main-header__item-list
+                    li.main-header__item
+                        a(href="/", class="active") Shop
+                    li.main-header__item
+                        a(href="/product") Products
+                    li.main-header__item 
+                        a(href="/admin/add-product") Add Product
+                    li.main-header__item
+                        a(href="/logout") Logout
+        main 
+            h1 My Products 
+            p List of all products...
