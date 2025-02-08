@@ -1,6 +1,6 @@
 const path = require('path');
 const express = require('express');
-const adminRoutes = require('./routes/admin');
+const adminData = require('./routes/admin');
 const shopRouter = require('./routes/shop');
 const bodyParser = require('body-parser');
 const app = express();
@@ -12,7 +12,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(express.static(path.join(__dirname, 'public')))
 
 //routes with base path
-app.use(adminRoutes);
+app.use(adminData.routes);
 app.use(shopRouter); 
 
 app.use((req, res, next) => {
