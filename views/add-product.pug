@@ -3,7 +3,7 @@ html(lang="en")
     head
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title Add Product
+        title #{pageTitle}
         link(rel="stylesheet", href="/css/shop.css")
         link(rel="stylesheet", href="/css/add-product.css")
         link(rel="stylesheet", href="/css/form.css")
@@ -26,12 +26,11 @@ html(lang="en")
 
         main
         
-            form.product-form(action="/admin/add-product" method='POST')
-            div.form-control
-                label(for="title") Title:
-                
-                input(type="text"  name="title" required id="title")
-        
+            form.product-form(action="/admin/add-product", method='POST')
+                div.form-control
+                    label(for="title") Title
+                    input(type="text", name="title", required)#title
             
-            button(type="submit") Add Product
+            
+                button.btn(type="submit") Add Product
     
