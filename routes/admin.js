@@ -11,7 +11,8 @@ router.get('/admin/add-product', (req, res, next) => {
 })
 
 // POST request for admin/add-product page
-router.post('/admin/add-product', (req,res,next) => {
+router.post('/admin/add-product', (req, res, next) => {
+    products.push({title: req.body.title})
     console.log(req.body)
     res.redirect('/')
 })
