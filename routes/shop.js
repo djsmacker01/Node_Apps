@@ -8,7 +8,7 @@ router.get('/', (req, res) => {
     const products = adminData.products
     // console.log('Shop js',adminData.products)
     // res.sendFile(path.join(rootDir, 'views', 'shop.html'));
-    res.render('shop',{products:products, docTitle: 'Shop'})
+    res.render('shop',{prods:products, docTitle: 'Shop'})
     
 })
 
